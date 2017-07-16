@@ -1,5 +1,6 @@
-MONGO_URL = 'mongodb://noder:noderauth&54;proximus.modulusmongo.net:27017/so9pojyN'
+//MONGO_URL = 'mongodb://127.0.0.1:61752'
 
+MONGO_URL = 'mongodb://localhost/breakingbread-dev',
 module.exports = {
     'secret': 'changeme',
     'database': MONGO_URL

@@ -66,9 +66,7 @@ apiRoutes.post('/authenticate', function(req, res) {
                     res.json({ success: false, message: 'Authentication failed.  Wrong password.'});
                 } else {
                     // If user is found and password is right, create an auth token.
-                    var token = jwt.sign(user, app.get('secret'), {
-                        expiresInMinutes:1440
-                    });
+                    var token = jwt.sign(user, app.get('secret'), { expiresInMinutes:1440 });
                     res.json({
                         success: true,
                         message: 'Token successfully generated.',
